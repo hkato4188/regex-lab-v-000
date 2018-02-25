@@ -21,6 +21,7 @@ end
 
 def valid_phone_number?(phone)
 # binding.pry
-  phone.scan(/\d{10}.+/) != []
+  phone.scan(/
+  ([0-9] *?){10} | (\[0-9]{3}\) ((\[0-9]{3}\)-[0-9]{4}) | [0-9]{7})\b)/) != []
   # phone.match(/([0-9] *?){10}|(\([0-9]{3}\)(([0-9]{3}-[0-9]{4})|[0-9]{7})\b)/) ? true : false
 end
