@@ -17,5 +17,5 @@ text.scan(/^[A-Z].+\b[\,\.\?\!]\z/) != []
 end
 
 def valid_phone_number?(phone)
-  phone.scan(/\b\d{8}b\/) != []
+  phone.scan(/\b\d{8}\b/) != []
 end
