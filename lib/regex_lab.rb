@@ -18,5 +18,5 @@ end
 
 def valid_phone_number?(phone)
 binding.pry
-  phone.scan(/\b\d{8}\b/) != []
+  phone.scan(/\b\d{10}\b/) != []
 end
